@@ -1,5 +1,12 @@
 # PHP-TEST
 
+This coding test was only completed for 4 hours.
+
+Instructions to run this:
+1. Requires composer and npm to download all the packages used.
+2. Only the Google Login feature was provided due to time restrictions.
+
+
 A simple php test that satisfies the following:
 1.	 Write a code that will enable you to implement a feature of “Signin via Linkedin”
 2.	Write a code that will enable you to implement a feature of “Signin via Google”
