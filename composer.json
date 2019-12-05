@@ -1,0 +1,8 @@
+{
+    "require": {
+        "google/apiclient": "2.4",
+        "nezamy/route": "^1.2",
+        "jenssegers/blade": "^1.2",
+        "facebook/graph-sdk": "^5.7"
+    }
+}
