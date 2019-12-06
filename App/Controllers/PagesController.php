@@ -5,6 +5,7 @@ namespace App\Controllers;
 use Jenssegers\Blade\Blade;
 
 use Exception;
+use App\Classes\Mailer;
 
 class PagesController {
 
@@ -31,13 +32,14 @@ class PagesController {
             'is_logged_in' => false,
             'email' => null,
             'name' => null,
-            'login_link' => null
+            'login_link' => null,
+            'mailer_info' => null,
         ];
 
         // init configuration
         $clientID = getenv('GOOGLE_ID');
         $clientSecret = getenv('GOOGLE_SECRET');
-        $redirectUri = 'http://localhost/PHP-TEST/google/';
+        $redirectUri = getenv('GOOGLE_AUTH_REDIRECT');
 
         // create Client Request to access Google API
         $client = new \Google_Client();
@@ -62,6 +64,9 @@ class PagesController {
             $data['is_logged_in'] = true;
             $data['email'] = $email;
             $data['name'] = $name;
+
+            $mailer = new Mailer($email, $name, 'Google Account');
+            $data['mailer_info'] = $mailer->notify();
 
         // now you can use this profile info to create account in your website and make user logged in.
         } else {
