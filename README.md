@@ -7,6 +7,9 @@ Instructions to run this:
 
 #########################################################################
 
+Not implemented:
+- Purposely did not implemented #1 and #4 below because I don't have a LinkedIn account.
+
 A simple php test that satisfies the following:
 1. Write a code that will enable you to implement a feature of “Signin via Linkedin”
 2. Write a code that will enable you to implement a feature of “Signin via Google”
