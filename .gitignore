@@ -1,4 +1,4 @@
 /vendor
 /node_modules
-/App/Cache/*
-/App/Cache/!.gitignore
+#/App/Cache/*
+#/App/Cache/!.gitignore
