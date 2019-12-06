@@ -35,8 +35,8 @@ class PagesController {
         ];
 
         // init configuration
-        $clientID = '867931384017-e0qpdjism74ct0ababuae92n2ecdpvg2.apps.googleusercontent.com';
-        $clientSecret = 'MZ4JsMeNI1VskODy4hmr6t4d';
+        $clientID = getenv('GOOGLE_ID');
+        $clientSecret = getenv('GOOGLE_SECRET');
         $redirectUri = 'http://localhost/PHP-TEST/google/';
 
         // create Client Request to access Google API

@@ -11,6 +11,12 @@ error_reporting(E_ALL);
 //Autoloader
 require BASE_PATH.'vendor/autoload.php';
 
+/**
+ * Load the .env file
+ */
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
 $app = System\App::instance();
 $app->request = System\Request::instance();
 $app->route = System\Route::instance($app->request);
@@ -39,7 +45,11 @@ function app_url($path = null){
 use App\Controllers\PagesController;
 $pages = new PagesController();
 
-//Configured routes
+/**
+ * Configured routes
+ */
+
+ //Index
 $route->get('/', [$pages, 'index']);
 
 //Google Login route

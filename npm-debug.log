@@ -1,0 +1,73 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'show',
+1 verbose cli   '-i' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.0
+4 silly mapToRegistry name PHP-TEST
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry data Result {
+7 silly mapToRegistry   raw: 'PHP-TEST',
+7 silly mapToRegistry   scope: null,
+7 silly mapToRegistry   escapedName: 'PHP-TEST',
+7 silly mapToRegistry   name: 'PHP-TEST',
+7 silly mapToRegistry   rawSpec: '',
+7 silly mapToRegistry   spec: 'latest',
+7 silly mapToRegistry   type: 'tag' }
+8 silly mapToRegistry uri https://registry.npmjs.org/PHP-TEST
+9 verbose request uri https://registry.npmjs.org/PHP-TEST
+10 verbose request no auth needed
+11 info attempt registry request try #1 at 10:19:15 AM
+12 verbose request id 96bca2b39bc2b6f3
+13 http request GET https://registry.npmjs.org/PHP-TEST
+14 http 404 https://registry.npmjs.org/PHP-TEST
+15 verbose headers { date: 'Fri, 06 Dec 2019 02:19:16 GMT',
+15 verbose headers   'content-type': 'application/json',
+15 verbose headers   'content-length': '21',
+15 verbose headers   connection: 'keep-alive',
+15 verbose headers   'set-cookie': [ '__cfduid=d4311b210164c07981bdc52500b644b011575598755; expires=Sun, 05-Jan-20 02:19:15 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+15 verbose headers   'cf-ray': '540ac61d5cc0605e-MNL',
+15 verbose headers   vary: 'Accept-Encoding',
+15 verbose headers   'cf-cache-status': 'MISS',
+15 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+15 verbose headers   server: 'cloudflare' }
+16 silly get cb [ 404,
+16 silly get   { date: 'Fri, 06 Dec 2019 02:19:16 GMT',
+16 silly get     'content-type': 'application/json',
+16 silly get     'content-length': '21',
+16 silly get     connection: 'keep-alive',
+16 silly get     'set-cookie': [ '__cfduid=d4311b210164c07981bdc52500b644b011575598755; expires=Sun, 05-Jan-20 02:19:15 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+16 silly get     'cf-ray': '540ac61d5cc0605e-MNL',
+16 silly get     vary: 'Accept-Encoding',
+16 silly get     'cf-cache-status': 'MISS',
+16 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+16 silly get     server: 'cloudflare' } ]
+17 verbose stack Error: Not found : PHP-TEST
+17 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+17 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
+17 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+17 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+17 verbose stack     at emitTwo (events.js:106:13)
+17 verbose stack     at Request.emit (events.js:191:7)
+17 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+17 verbose stack     at emitOne (events.js:96:13)
+17 verbose stack     at Request.emit (events.js:188:7)
+17 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
+18 verbose statusCode 404
+19 verbose pkgid PHP-TEST
+20 verbose cwd C:\xampp\htdocs\PHP-TEST
+21 error Windows_NT 10.0.18362
+22 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "show" "-i"
+23 error node v6.10.0
+24 error npm  v3.10.10
+25 error code E404
+26 error 404 Not found : PHP-TEST
+27 error 404
+28 error 404 'PHP-TEST' is not in the npm registry.
+29 error 404 Your package name is not valid, because
+30 error 404 1. name can no longer contain capital letters
+31 error 404 Note that you can also install from a
+32 error 404 tarball, folder, http url, or git url.
+33 verbose exit [ 1, true ]

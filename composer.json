@@ -3,6 +3,8 @@
         "google/apiclient": "2.4",
         "nezamy/route": "^1.2",
         "jenssegers/blade": "^1.2",
-        "facebook/graph-sdk": "^5.7"
+        "facebook/graph-sdk": "^5.7",
+        "phpmailer/phpmailer": "^6.1",
+        "vlucas/phpdotenv": "^4.0"
     }
 }

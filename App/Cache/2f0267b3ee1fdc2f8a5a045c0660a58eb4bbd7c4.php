@@ -3,14 +3,14 @@
 <div class="container-fluid">
 
     <div class="container">
-        <div class="row mb-4">
+        <div class="row mt-4 mb-4">
             <div class="col-md-3"></div>
 
             <div class="col-md-6 text-center">
-                <h1>Login Via Google Account</h1>
+                <h4>Login Via Google Account</h4>
                 <hr>
                 <?php if(!$is_logged_in): ?>
-                <a href="<?php echo e($login_link); ?>" class="btn btn-light">Google Login</a>
+                <a href="<?php echo e($login_link); ?>" class="btn btn-light">Login Via Google</a>
                 <?php endif; ?>
                 <hr>
                 <a href="<?php echo e(app_url()); ?>" class="text-decoration-none">Back to Home</a>
