@@ -25,7 +25,8 @@
             <div class="col-12">
                 @if($is_logged_in)
                 <p>You are now logged in with your <b>Google Account</b>. The details of your account are shown below:</p>
-                <p><b>Name:</b> {{ $name }}<b>Email Address:</b> {{ $email }}</p>
+                <p><b>Name:</b> {{ $name }}</p>
+                <p><b>Email Address:</b> {{ $email }}</p>
                 <p><b>Reload this page</b> to try a different login service. <a href="{{ app_url('google') }}" class="text-decoration-none">Reload Page</a>.</p>
                 @endif
                 @if($mailer_info !== null)
