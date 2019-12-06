@@ -92,26 +92,28 @@ try {
                 <th>Description</th>
                 <th>Amount</th>
             </tr>
+        </thead>
+        <tbody>
             <?php foreach($query_asoc as $order): ?>
             <tr>
                 <td><?php echo $order['qty'] ?></td>
                 <td><?php echo $order['unit'] ?></td>
                 <td><?php echo $order['description'] ?></td>
-                <td><?php echo $order['price'] ?></td>
+                <td><?php echo $order['price'] ?> PHP</td>
             </tr>
             <?php endforeach; ?>
-        </thead>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total Amount</td>
+                <td></td>
+                <td></td>
+                <td><?php echo $total_amount; ?> PHP</td>
+            </tr>
+        </tfoot>
     </table>
     <?php
     $order_html = ob_get_clean();
-
-    /**
-     * Table header
-     */
-
-    /**
-     * Loop through each orders for body content
-     */
 
     $mail->Body = $order_html;
     $mail->send();
