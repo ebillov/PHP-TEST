@@ -4,6 +4,7 @@ Instructions to run this:
 2. Requires PHP 5.6+
 3. Install Composer and run composer install command.
 4. Install NPM and run npm install.
+5. Configure the .env file provided for the SMTP mailer.
 
 #########################################################################
 
