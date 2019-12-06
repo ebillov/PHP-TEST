@@ -179,9 +179,8 @@ class PagesController {
             } catch(Facebook\Exceptions\FacebookResponseException $e) {
                 // When Graph returns an error
                 echo 'Graph returned an error: ' . $e->getMessage();
-                session_destroy();
                 // redirecting user back to app login page
-                header("Location: " . app_url('facebook'));
+                header('Location: ' . app_url('facebook'));
                 exit;
             } catch(Facebook\Exceptions\FacebookSDKException $e) {
                 // When validation fails or other local issues
@@ -204,6 +203,15 @@ class PagesController {
         if($data['is_notified']){
             $mailer = new Mailer($data['email'], $data['name'], 'Facebook Account');
             $data['mailer_info'] = $mailer->notify();
+        }
+
+        /**
+         * For logging out
+         */
+        if(isset($_GET['logout'])){
+            $url = 'https://www.facebook.com/logout.php?next=' . getenv('FACEBOOK_APP_REDIRECT') . '&access_token='. (isset($_SESSION['facebook_access_token']) ? $_SESSION['facebook_access_token'] : '');
+            session_destroy();
+            header('Location: ' . $url);
         }
 
         //Render the template

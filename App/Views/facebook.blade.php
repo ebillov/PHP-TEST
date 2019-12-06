@@ -30,7 +30,7 @@
                 </div>
                 <p><b>Name:</b> {{ $name }}</p>
                 <p><b>Email Address:</b> {{ $email }}</p>
-                <p><a href="{{ app_url('facebook') }}" class="text-decoration-none">Logout</a> to try a again.</p>
+                <p><a href="{{ app_url('facebook?logout=true') }}" class="text-decoration-none">Logout</a> to try again.</p>
                 @endif
                 @if($mailer_info !== null)
                 <hr>
