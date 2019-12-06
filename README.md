@@ -3,8 +3,9 @@
 This coding test was only completed for 4 hours.
 
 Instructions to run this:
-1. Requires composer and npm to download all the packages used.
-2. Only the Google Login feature was provided due to time restrictions.
+1. Clone this on your local machine or whatever platform to run this.
+2. Requires PHP 5.6+, composer and npm to download all the packages used.
+3. Only the Google Login feature was provided due to time restrictions.
 
 
 A simple php test that satisfies the following:
